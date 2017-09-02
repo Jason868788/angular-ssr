@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "tsc": "tsc",
-    "start": "webpack-dev-server",
-    "build:all": "npm run build:client && npm run build:server",
+    "start": "npm run build:all && webpack-dev-server",
+    "build:all": "npm run build:server && npm run build:client",
     "build": "npm run build:client",
     "build:client": "webpack",
     "build:server": "ngc -p tsconfig.server.json && webpack --progress --config webpack.server.config.js",
